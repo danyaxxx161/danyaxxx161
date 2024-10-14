@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа бокса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Школа бокса</h1>
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section id="home">
+    <h2>Добро пожаловать в нашу школу бокса!</h2>
+    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Бокс" class="hero-image">
+    <p>Мы предлагаем профессиональные тренировки для всех уровней подготовки.</p>
+</section>
+
+<section id="services">
+    <h2>Наши услуги</h2>
+    <div class="services">
+        <div class="service" onclick="showDetails('group')">
+            <h3>Групповые тренировки</h3>
+            <img src="https://images.unsplash.com/photo-1555685812-4e7b5c6e0b6e" alt="Групповые тренировки" class="service-image">
+            <p>Тренируйтесь в команде и достигайте результатов вместе!</p>
+        </div>
+        <div class="service" onclick="showDetails('individual')">
+            <h3>Индивидуальные занятия</h3>
+            <img src="https://images.unsplash.com/photo-1588421903326-5d0d2c9c3e08" alt="Индивидуальные занятия" class="service-image">
+            <p>Персональные тренировки под ваше расписание и уровень.</p>
+        </div>
+        <div class="service" onclick="showDetails('kids')">
+            <h3>Тренировки для детей</h3>
+            <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Тренировки для детей" class="service-image">
+            <p>Научите своих детей основам бокса в безопасной обстановке.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Email: info@boxing-school.com</p>
+    <p>Телефон: +7 (123) 456-78-90</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Школа бокса. Все права защищены.</p>
+</footer>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
